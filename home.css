@@ -80,7 +80,6 @@ header .search__input i {
     background-repeat: no-repeat;
     background-attachment: fixed;
     position: relative;
-    height: auto;
     z-index: 2;
 }
 
@@ -128,3 +127,4 @@ header .search__input i {
 /* end banner */
 
 /* start content */
+
