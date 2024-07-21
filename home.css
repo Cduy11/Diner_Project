@@ -1,0 +1,130 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* start header */
+header {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+
+}
+
+header .header__logo {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+header .header__title {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 20px;
+    padding: 40px 0 20px 0;
+    align-items: center;
+}
+
+header .header__right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+header .header__bars {
+    color: white;
+    border: none;
+    background: none;
+    font-size: 1.95rem;
+    text-align: center;
+}
+
+header form {
+    position: relative;
+}
+
+header .search {
+    padding: 10px 50px 10px 20px;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+header .search__input i {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+}
+
+/* chưa reponsive */
+
+/* end header  */
+
+/* start banner */
+.banner {
+    background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), 
+    url("https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner1.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    height: auto;
+    z-index: 2;
+}
+
+.banner__info {
+    position: relative;
+    z-index: 1;
+    padding: 200px 20px;
+    max-width: 600px;
+    text-align: left;
+    color: aliceblue;
+}
+
+.banner__info h1 {
+    font-size: 55px;
+    font-weight: 600;
+    line-height: 60px
+}
+
+.banner__info p {
+    font-size: 15px;
+    line-height: 30px;
+}
+
+.banner__info button {
+    height: 50px;
+    width: 200px;
+    line-height: 30px;
+    border-radius: 10px;
+    background: none;
+    color: white;
+    border: 1px solid white;
+    font-weight: 600;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.banner__info button:hover {
+    background: white;
+    color: #ff6600;
+}
+
+/* chưa reponsive */
+
+/* end banner */
+
+/* start content */
