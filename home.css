@@ -73,8 +73,8 @@ header .search__input i {
 
 /* start banner */
 .banner {
-    background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)), 
-    url("https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner1.jpg");
+    background-image: linear-gradient(to right, #ff6600, hsl(30deg 100% 1% / 20%)),
+        url("https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner1.jpg");
     background-position: top center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -202,7 +202,7 @@ header .search__input i {
 .agent__subscribe_right {
     display: flex;
     flex-direction: column;
-   
+
 }
 
 .agent__subscribe_left i,
@@ -235,6 +235,7 @@ header .search__input i {
 .agent__subscribe_right:hover i {
     color: #fcb900;
 }
+
 /* end agent */
 
 /* start categories */
@@ -257,22 +258,105 @@ header .search__input i {
 
 .categories .card {
     position: relative;
+    cursor: pointer;
+    border: none;
+}
+
+.categories .col-4 {
+    padding: 20px;
 }
 
 .categories .card-body {
     position: absolute;
-    left: auto;
+    left: 0;
     bottom: 0;
     color: white;
-    padding: 40px 40px;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76) 100%);
+    border-radius: 14px;
+}
+
+.card-body h5, 
+.card-body p {
+    font-weight: 700;
+    margin: 0;
 }
 
 .card-body h5 {
-    font-weight: 700;
     color: #fff;
+    margin-bottom: 10px;
 }
 
 .card-body p {
     color: #fcb900;
-    font-weight: 700;
+}
+
+.categories .card-img-top {
+    transition: 0.5s;
+    border-radius: 14px;
+}
+
+.categories .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(221, 216, 216, 0.2); 
+    opacity: 0; 
+    transition: 0.3s;
+}
+
+.categories .card:hover::before {
+    opacity: 1; 
+}
+
+/* end categories */
+
+/* start feature */
+.feature {
+    padding: 40px;
+    margin-top: 40px;
+}
+.feature .card {
+    padding: 10px 20px;
+}
+
+.feature .row {
+    margin-right: -35px;
+    margin-left: -15px;
+}
+
+.feature .col-4 {
+    padding: 20px;
+}
+.feature .card-title {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-gap: 30px;
+}
+
+
+.feature .card-body i{
+    width: 70px;
+    height: 70px;
+    line-height: 70px;
+    border-radius: 10px;
+    text-align: center;
+    background: rgba(130, 115, 252, 0.05);
+    color: #ff6600;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.feature .card-body i:hover {
+    background: #ff6600;
+    color: #fff;
+}
+
+.feature .card-body p {
+    color: black;
 }
