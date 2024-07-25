@@ -156,17 +156,12 @@ header .search__input i {
 /* end content */
 
 /* start agent */
-
 .agent {
     background: #ff6600;
- 
 }
 
 .agent__left {
-    background: url("./image/banner3.jpg");
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
+    background: url("./image/banner3.jpg") center/cover no-repeat;
     min-height: 600px;
     z-index: 1;
     position: relative;
@@ -174,6 +169,14 @@ header .search__input i {
 
 .agent__content {
     padding: 60px 40px;
+}
+
+.agent__content h6,
+.agent__content h3 {
+    color: black;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 50px;
 }
 
 .agent__content h6 {
@@ -185,25 +188,25 @@ header .search__input i {
     color: #fff;
 }
 
-.agent__content h3 {
-    color: black;
-    font-size: 40px;
-    font-weight: 600;
-    line-height: 50px;
-}
-
 .agent__content p {
     color: #ffdfc9;
-   font-weight: none;
+    font-weight: none;
 }
 
 .agent__subscribe {
     display: flex;
     padding: 0px 40px;
-    
 }
 
-.agent__subscribe_title i {
+.agent__subscribe_left,
+.agent__subscribe_right {
+    display: flex;
+    flex-direction: column;
+   
+}
+
+.agent__subscribe_left i,
+.agent__subscribe_right i {
     height: 70px;
     width: 70px;
     line-height: 70px;
@@ -215,17 +218,61 @@ header .search__input i {
     transition: 0.5s;
 }
 
-.agent__subscribe_title h4 {
+.agent__subscribe_left h4,
+.agent__subscribe_right h4 {
     font-weight: 600;
     margin: 20px 0px;
     font-size: 20px;
 }
 
-.agent__subscribe_title p {
+.agent__subscribe_left p,
+.agent__subscribe_right p {
     color: #ffdfc9;
     font-size: 15px;
 }
 
-.agent__subscribe:hover i {
+.agent__subscribe_left:hover i,
+.agent__subscribe_right:hover i {
     color: #fcb900;
+}
+/* end agent */
+
+/* start categories */
+
+.categories {
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.categories__header {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.categories__header h4 {
+    color: #ff6600;
+    font-family: 'Pacifico', cursive;
+    font-weight: 400;
+}
+
+.categories .card {
+    position: relative;
+}
+
+.categories .card-body {
+    position: absolute;
+    left: auto;
+    bottom: 0;
+    color: white;
+    padding: 40px 40px;
+}
+
+.card-body h5 {
+    font-weight: 700;
+    color: #fff;
+}
+
+.card-body p {
+    color: #fcb900;
+    font-weight: 700;
 }
