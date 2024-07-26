@@ -182,3 +182,92 @@ header .collapse i{
     font-size: 30px;
     font-weight: 700;
 }
+
+.feature__activity {
+    margin-top: 80px;
+}
+
+.feature__activity .row {
+    align-items: center;
+}
+
+.feature__image img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 18px;
+}
+
+.feature__content {
+    padding-left: 3rem;
+}
+
+.feature__content h3 {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+
+}
+
+.feature__content p {
+    line-height: 30px;
+    margin: 40px 0px;
+}
+
+.feature__button {
+    width: 181px;
+    height: 50px;
+    line-height: 42px;
+    background: #ff6600;
+    color: #fff;
+    border: 1px solid;
+    border-radius: 9px;
+    font-size: 16px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+
+
+
+.feature__button a {
+    color: #fff;
+    font-size: 17px;
+    font-weight: 400;
+    text-decoration: none;
+}
+
+.feature__button i {
+    margin-left: 5px;
+    font-size: 14px;
+}
+
+.feature__footer {
+    margin-top: 50px;
+    align-items: center;
+}
+
+.feature__footer .row {
+    align-items: center;
+}
+
+.feature__footter__question  {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+    
+}
+
+.feature__footer .content h4 {
+    color: #ff6600;
+    font-weight: 400;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.feature__footer .content h4:hover {
+    color: #fcb900;
+}
+
+.feature__footer .content p {
+    line-height: 30px;
+}
