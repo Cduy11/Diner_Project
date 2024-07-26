@@ -1,0 +1,184 @@
+/* reset css */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+/* start header */
+header {
+    position: absolute;
+    z-index: 3;
+    width: 100%;
+
+}
+
+header .header__logo {
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+}
+
+header .header__title {
+    display: grid;
+    grid-template-columns: 4fr 1fr;
+    grid-gap: 20px;
+    padding: 40px 0 20px 0;
+    align-items: center;
+}
+
+header .header__right {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+    align-items: center;
+}
+
+header .header__bars {
+    color: white;
+    border: none;
+    background: none;
+    font-size: 1.95rem;
+    text-align: center;
+}
+
+header form {
+    position: relative;
+}
+
+header .search {
+    padding: 10px 50px 10px 20px;
+    height: 45px;
+    font-size: 16px;
+    border-radius: 10px;
+}
+
+header .search__input i {
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+}
+
+
+
+header .navbar-toggler {
+    color: #fff;
+    font-size: 30px;
+}
+
+header .collapse {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1050;
+}
+
+header .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+header .nav-link {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+header .collapse i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #ff6600;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 14px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+/* end header  */
+
+/* start banner */
+.banner {
+    background-image: linear-gradient(to right, rgb(236 98 6 / 98%), rgb(5 3 0 / 83%)),
+        url("./image/banner2.jpg");
+    background-position: top center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    position: relative;
+    z-index: 2;
+}
+
+
+
+.banner__info {
+    position: relative;
+    padding: 160px 20px;
+    max-width: auto;
+    color: aliceblue;
+    display: flex;
+    justify-content: end;
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    align-items: center; /* Căn giữa theo chiều dọc */
+   
+}
+
+.banner__info a {
+    color: #ff6600;
+    font-size: 20px;
+    font-weight: 600;
+    margin-right: 20px;
+    text-decoration: none;
+}
+
+.banner__info i {
+    margin-right: 20px;
+    margin-top: 8px;
+    font-size: 17px;
+    color: #fff;
+}
+
+.banner__info p {
+    color: #fff;
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+}
+/* chưa reponsive */
+
+/* end banner */
+
+/* start feature  */
+
+.feature {
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.feature__title h6 {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
+    color: #ff6600;
+    font-family: 'Pacifico', cursive;
+}
+
+.feature__title h3 {
+    font-size: 30px;
+    font-weight: 700;
+}

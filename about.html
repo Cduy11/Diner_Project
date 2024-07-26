@@ -17,6 +17,76 @@
 </head>
 
 <body>
+    <!-- start header -->
+    <header>
+        <div class="container">
+            <div class="header__title d-flex justify-content-between align-items-center py-3">
+                <div class="header__logo">
+                    <h2>Dinner</h2>
+                </div>
+                <div class="header__right d-flex align-items-center">
+                    <div class="search__input">
+                        <form action="#">
+                            <input class="search form-control" type="text" placeholder="Search here">
+                            <i class="fas fa-search"></i>
+                        </form>
+                    </div>
+                    <button class="btn" id="switchButton" title="Click to switch theme">
+                        <i class="far fa-moon"></i>
+                        <i class="far fa-sun"></i>
+                    </button>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                        aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="collapse text-white" id="navbarMenu">
+            <nav class="nav flex-column p-3">
+                <a class="nav-link text-white" href="#">Home</a>
+                <a class="nav-link text-white" href="http://127.0.0.1:5500/about.html">About</a>
+                <a class="nav-link text-white" href="services">Services</a>
+                <a class="nav-link text-white" href="blog">Blog Posts</a>
+                <a class="nav-link text-white" href="404">404 page</a>
+                <a class="nav-link text-white" href="elements">Elements</a>
+                <a class="nav-link text-white" href="contact">Contact</a>
+                <a class="nav-link text-white" href="landing">Landing page</a>
+            </nav>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMenu"
+                aria-controls="navbarMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-times"></i>
+            </button>
+        </div>
+    </header>
+    <!-- end header  -->
+
+    <!-- start banner -->
+    <section class="banner">
+        <div class="banner__content">
+            <div class="container">
+                <div class="banner__info">
+                    <a href="">Home</a>
+                    <i class="fas fa-arrow-right"></i>
+                    <p>About Page</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="feature">
+        <div class="container">
+            <div class="feature__title">
+                <h6>The story</h6>
+                <h3>About us</h3>
+            </div>
+        </div>
+    </div>
+
+    <!-- boostrap 5.3 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
