@@ -67,6 +67,20 @@ header .search__input i {
     bottom: 15px;
 }
 
+header .header__button i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #ff6600;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 14px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
+
+
 /* chưa reponsive */
 
 /* end header  */
@@ -243,6 +257,7 @@ header .search__input i {
 .categories {
     padding: 40px;
     margin-top: 40px;
+    background: #f1f1f1;
 }
 
 .categories__header {
@@ -323,6 +338,9 @@ header .search__input i {
 }
 .feature .card {
     padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 14px;
+    border: 1px solid rgb(243, 243, 243);
 }
 
 .feature .row {
@@ -352,11 +370,13 @@ header .search__input i {
     transition: 0.5s;
 }
 
-.feature .card-body i:hover {
+.feature .card:hover i {
     background: #ff6600;
     color: #fff;
 }
 
 .feature .card-body p {
-    color: black;
+    color: rgb(73, 72, 72);
+    font-weight: 400;
 }
+
