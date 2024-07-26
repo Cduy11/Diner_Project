@@ -67,7 +67,48 @@ header .search__input i {
     bottom: 15px;
 }
 
-/* chưa reponsive */
+
+
+header .navbar-toggler {
+    color: #fff;
+    font-size: 30px;
+}
+
+header .collapse {
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1050;
+}
+
+header .nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+header .nav-link {
+    font-size: 1.5rem;
+    margin: 10px 0;
+}
+header .collapse i{
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    background: #ff6600;
+    color: #f1f1f1;
+    border: none;
+    border-radius: 14px;
+    position: absolute;
+    top: 20px;
+    right: 40px;
+}
 
 /* end header  */
 
@@ -243,6 +284,7 @@ header .search__input i {
 .categories {
     padding: 40px;
     margin-top: 40px;
+    background: #f1f1f1;
 }
 
 .categories__header {
@@ -323,6 +365,9 @@ header .search__input i {
 }
 .feature .card {
     padding: 10px 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    border-radius: 14px;
+    border: 1px solid rgb(243, 243, 243);
 }
 
 .feature .row {
@@ -352,11 +397,13 @@ header .search__input i {
     transition: 0.5s;
 }
 
-.feature .card-body i:hover {
+.feature .card:hover i {
     background: #ff6600;
     color: #fff;
 }
 
 .feature .card-body p {
-    color: black;
+    color: rgb(73, 72, 72);
+    font-weight: 400;
 }
+
