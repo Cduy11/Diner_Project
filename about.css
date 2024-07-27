@@ -97,7 +97,8 @@ header .nav-link {
     font-size: 1.5rem;
     margin: 10px 0;
 }
-header .collapse i{
+
+header .collapse i {
     width: 50px;
     height: 50px;
     line-height: 50px;
@@ -133,9 +134,11 @@ header .collapse i{
     color: aliceblue;
     display: flex;
     justify-content: end;
-    justify-content: center; /* Căn giữa theo chiều ngang */
-    align-items: center; /* Căn giữa theo chiều dọc */
-   
+    justify-content: center;
+    /* Căn giữa theo chiều ngang */
+    align-items: center;
+    /* Căn giữa theo chiều dọc */
+
 }
 
 .banner__info a {
@@ -159,6 +162,7 @@ header .collapse i{
     font-weight: 600;
     margin-top: 20px;
 }
+
 /* chưa reponsive */
 
 /* end banner */
@@ -247,11 +251,11 @@ header .collapse i{
     align-items: center;
 }
 
-.feature__footter__question  {
+.feature__footter__question {
     font-size: 38px;
     line-height: 48px;
     font-weight: 600;
-    
+
 }
 
 .feature__footer .content h4 {
@@ -281,6 +285,7 @@ header .collapse i{
     padding: 30px 0px;
     align-items: center;
 }
+
 .skill__left h6 {
     color: #ff6600;
     font-size: 26px;
@@ -301,8 +306,8 @@ header .collapse i{
     margin-top: 10px;
 }
 
-.progress-info h3{
-font-size: 18px;
+.progress-info h3 {
+    font-size: 18px;
 }
 
 .progress-info .progress {
@@ -348,6 +353,7 @@ font-size: 18px;
 .team__image {
     text-align: center;
     cursor: pointer;
+    position: relative;
 }
 
 .team__image img {
@@ -370,3 +376,37 @@ font-size: 18px;
 .team__content:hover h6 {
     color: #ff6600;
 }
+
+.team__socials {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.team__socials a {
+    line-height: 30px;
+    color: #fff;
+    padding: 10px;
+    margin: 0px 10px;
+    border-radius: 50%;
+    background: rgba(157, 157, 157, 0.5);
+    transition: 0.5s;
+    text-decoration: none;
+    text-align: center;
+}
+
+.team__image:hover  .team__socials {
+    display: block;
+    color: #ff6600;
+}
+.team__image:hover .team__content h6 {
+    color: #ff6600;
+}
+
+.team__socials a:hover {
+    background: #fff;
+    color: #ff6600;
+}
+
