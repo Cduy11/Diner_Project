@@ -226,9 +226,6 @@ header .collapse i{
     cursor: pointer;
 }
 
-
-
-
 .feature__button a {
     color: #fff;
     font-size: 17px;
@@ -270,4 +267,106 @@ header .collapse i{
 
 .feature__footer .content p {
     line-height: 30px;
+}
+
+/* start skills  */
+
+.skills {
+    padding: 40px;
+    margin-top: 40px;
+    background: #f7f7f7;
+}
+
+.skills_content {
+    padding: 30px 0px;
+    align-items: center;
+}
+.skill__left h6 {
+    color: #ff6600;
+    font-size: 26px;
+    font-weight: 500;
+}
+
+.skill__left h3 {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+.skill__left p {
+    line-height: 30px;
+}
+
+.skill__bars {
+    margin-top: 10px;
+}
+
+.progress-info h3{
+font-size: 18px;
+}
+
+.progress-info .progress {
+    background: rgba(22, 28, 45, 0.7);
+    height: 0.5rem;
+}
+
+.progress-info .progress-bar {
+    background: #ff6600;
+}
+
+.skill__right {
+    padding-left: 3rem;
+}
+
+.skill__right img {
+    max-width: 100%;
+    border-radius: 14px;
+}
+
+/* start team  */
+
+.team {
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.team .team__title {
+    text-align: center;
+}
+
+.team__title h6 {
+    color: #ff6600;
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.team__title h3 {
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.team__image {
+    text-align: center;
+    cursor: pointer;
+}
+
+.team__image img {
+    max-width: 100%;
+}
+
+.team__member {
+    margin-top: 45px;
+}
+
+.team__content {
+    margin-top: 20px;
+}
+
+.team__content h6 {
+    font-size: 25px;
+    transition: 0.5s;
+}
+
+.team__content:hover h6 {
+    color: #ff6600;
 }
