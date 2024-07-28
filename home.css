@@ -110,6 +110,28 @@ header .collapse i{
     right: 40px;
 }
 
+@media screen and (min-width: 992px) {
+    .header__title {
+        flex-direction: row;
+    }
+    .header__logo {
+        margin-bottom: 0;
+    }
+    .header__right {
+        flex-direction: row;
+    }
+    .search__input {
+        margin-bottom: 0;
+    }
+    .collapse {
+        display: block;
+        background-color: transparent;
+    }
+    .nav-link {
+        margin: 0 1rem;
+    }
+}
+
 /* end header  */
 
 /* start banner */
@@ -193,6 +215,51 @@ header .collapse i{
     font-size: 18px;
     line-height: 30px;
 }
+
+@media (max-width: 991px) {
+    .banner {
+        height: 400px;
+    }
+    .banner__info {
+        padding: 150px 15px;
+        max-width: 80%;
+        text-align: center;
+    }
+    .banner__info h1 {
+        font-size: 45px;
+        line-height: 50px;
+    }
+    .banner__info p {
+        font-size: 14px;
+        line-height: 25px;
+    }
+    .banner__info button {
+        height: 45px;
+        width: 180px;
+        line-height: 28px;
+    }
+}
+
+@media (max-width: 767px) {
+    .banner__info {
+        padding: 100px 10px;
+        max-width: 100%;
+    }
+    .banner__info h1 {
+        font-size: 35px;
+        line-height: 40px;
+    }
+    .banner__info p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .banner__info button {
+        height: 40px;
+        width: 150px;
+        line-height: 25px;
+    }
+}
+
 
 /* end content */
 
@@ -472,6 +539,7 @@ header .collapse i{
 
 .carousel-indicators {
     position: relative;
+    margin-left: 220px;
 }
 
 .carousel-item .icon {
