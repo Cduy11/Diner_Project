@@ -358,6 +358,7 @@ header .collapse i {
 
 .team__image img {
     max-width: 100%;
+    border-radius: 8px;
 }
 
 .team__member {
