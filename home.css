@@ -585,6 +585,18 @@ header .collapse i{
     font-weight: 400;
 }
 
+.feature .card-title {
+    display: flex;
+}
+
+.feature .card-titlle-icons {
+    margin-right: 20px;
+}
+
+.feature .card-title-infor {
+    line-height: 32px;
+    font-weight: 400;
+}
 
 
 /* end feature */
