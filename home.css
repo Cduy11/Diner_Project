@@ -184,38 +184,6 @@ header .collapse i{
     background: white;
     color: #ff6600;
 }
-
-/* chưa reponsive */
-
-/* end banner */
-
-/* start content */
-
-.content {
-    padding: 40px;
-    margin-top: 40px;
-}
-
-.content .content__left p {
-    color: #ff6600;
-    font-family: 'Pacifico', cursive;
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 20px;
-}
-
-.content .content__left h3 {
-    font-size: 38px;
-    line-height: 48px;
-    font-weight: 600;
-}
-
-
-.content .content__right p {
-    font-size: 18px;
-    line-height: 30px;
-}
-
 @media (max-width: 991px) {
     .banner {
         height: 400px;
@@ -259,7 +227,73 @@ header .collapse i{
         line-height: 25px;
     }
 }
+/* end banner */
 
+/* start content */
+
+.content {
+    padding: 40px;
+    margin-top: 40px;
+}
+
+.content .content__left p {
+    color: #ff6600;
+    font-family: 'Pacifico', cursive;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 20px;
+}
+
+.content .content__left h3 {
+    font-size: 38px;
+    line-height: 48px;
+    font-weight: 600;
+}
+
+
+.content .content__right p {
+    font-size: 18px;
+    line-height: 30px;
+}
+
+@media (max-width: 987px) and (min-width: 768px) {
+    .content {
+        padding: 30px;
+        margin-top: 30px;
+    }
+    .content .content__left p {
+        font-size: 18px;
+        line-height: 18px;
+    }
+    .content .content__left h3 {
+        font-size: 34px;
+        line-height: 44px;
+    }
+    .content .content__right p {
+        font-size: 16px;
+        line-height: 28px;
+    }
+}
+
+/* Mobile  */
+@media (max-width: 767px) {
+    .content {
+        padding: 20px;
+        margin-top: 20px;
+    }
+    .content .content__left p {
+        font-size: 16px;
+        line-height: 16px;
+    }
+    .content .content__left h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+    .content .content__right p {
+        font-size: 14px;
+        line-height: 26px;
+    }
+}
 
 /* end content */
 
@@ -343,6 +377,66 @@ header .collapse i{
 .agent__subscribe_right:hover i {
     color: #fcb900;
 }
+@media (max-width: 987px) {
+    .agent__left,
+    .agent__right {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .agent__left {
+        order: 1;
+        min-height: 300px;
+    }
+
+    .agent__right {
+        order: 2;
+        margin-top: 20px;
+    }
+
+    .agent__content {
+        padding: 30px 20px;
+    }
+
+    .agent__content h6,
+    .agent__content h3 {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .agent__content h6 {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .agent__subscribe {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .agent__subscribe_left,
+    .agent__subscribe_right {
+        margin-bottom: 20px;
+    }
+
+    .agent__subscribe_left i,
+    .agent__subscribe_right i {
+        height: 60px;
+        width: 60px;
+        line-height: 60px;
+        font-size: 18px;
+    }
+
+    .agent__subscribe_left h4,
+    .agent__subscribe_right h4 {
+        font-size: 18px;
+    }
+
+    .agent__subscribe_left p,
+    .agent__subscribe_right p {
+        font-size: 14px;
+    }
+}
 
 /* end agent */
 
@@ -371,7 +465,7 @@ header .collapse i{
     border: none;
 }
 
-.categories .col-4 {
+.categories .col-12 {
     padding: 20px;
 }
 
@@ -423,6 +517,27 @@ header .collapse i{
     opacity: 1; 
 }
 
+@media (max-width: 767px) {
+    .categories .col-4 {
+        flex:  50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .categories .col-4 {
+        flex: 50%;
+        max-width: 50%;
+    }
+}
+
+@media (min-width: 992px) {
+    .categories .col-4 {
+        flex:  30%;
+        max-width: 30%;
+    }
+}
+
 /* end categories */
 
 /* start feature */
@@ -435,6 +550,8 @@ header .collapse i{
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 14px;
     border: 1px solid rgb(243, 243, 243);
+    margin-bottom: 20px;
+    
 }
 
 .feature .row {
@@ -442,15 +559,9 @@ header .collapse i{
     margin-left: -15px;
 }
 
-.feature .col-4 {
-    padding: 20px;
+.feature .col-12 {
+    margin: 20px;
 }
-.feature .card-title {
-    display: grid;
-    grid-template-columns: auto 1fr;
-    grid-gap: 30px;
-}
-
 
 .feature .card-body i{
     width: 70px;
@@ -474,6 +585,9 @@ header .collapse i{
     font-weight: 400;
 }
 
+
+
+/* end feature */
 /* start contact */
 .contact {
     text-align: center;
