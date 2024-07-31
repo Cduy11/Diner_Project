@@ -414,6 +414,9 @@ header .collapse i {
     left: 50%;
     transform: translate(-50%, -50%);
     display: none;
+    white-space: nowrap;
+   
+   
 }
 
 .team__socials a {
@@ -426,6 +429,7 @@ header .collapse i {
     transition: 0.5s;
     text-decoration: none;
     text-align: center;
+    display: inline-block;
 }
 
 .team__image:hover .team__socials {
@@ -453,6 +457,24 @@ header .collapse i {
 
     .team__content p {
         font-size: 14px;
+    }
+
+    .team__socials {
+        justify-content: center;
+        white-space: nowrap;
+        margin-top: -31px;
+    }
+}
+
+@media (min-width: 992px){
+    .team__socials {
+        margin-top: -31px;
+    }
+}
+
+@media (min-width: 768px){
+    .team__socials {
+        margin-top: -31px;
     }
 }
 
