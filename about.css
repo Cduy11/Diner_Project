@@ -135,10 +135,7 @@ header .collapse i {
     display: flex;
     justify-content: end;
     justify-content: center;
-    /* Căn giữa theo chiều ngang */
     align-items: center;
-    /* Căn giữa theo chiều dọc */
-
 }
 
 .banner__info a {
@@ -162,9 +159,6 @@ header .collapse i {
     font-weight: 600;
     margin-top: 20px;
 }
-
-/* chưa reponsive */
-
 /* end banner */
 
 /* start feature  */
@@ -273,6 +267,23 @@ header .collapse i {
     line-height: 30px;
 }
 
+@media (max-width: 768px) {
+    .feature__title h6 {
+        font-size: 14px;
+    }
+
+    .feature__title h3 {
+        font-size: 24px;
+    }
+
+    .feature__content h3 {
+        font-size: 20px;
+    }
+
+    .feature__footer .content h4 {
+        font-size: 18px;
+    }
+}
 /* start skills  */
 
 .skills {
@@ -321,11 +332,29 @@ header .collapse i {
 
 .skill__right {
     padding-left: 3rem;
+    padding-top: 40px;
+    
 }
 
 .skill__right img {
     max-width: 100%;
     border-radius: 14px;
+}
+
+@media (max-width: 768px) {
+
+    .skill__right {
+        margin-bottom: 2rem;
+        
+    }
+
+    .skill__left h3 {
+        font-size: 24px;
+    }
+
+    .progress-info h3 {
+        font-size: 16px;
+    }
 }
 
 /* start team  */
@@ -363,6 +392,7 @@ header .collapse i {
 
 .team__member {
     margin-top: 45px;
+    justify-content: center;
 }
 
 .team__content {
@@ -410,6 +440,20 @@ header .collapse i {
 .team__socials a:hover {
     background: #fff;
     color: #ff6600;
+}
+
+@media (max-width: 768px) {   
+    .team__title h3 {
+        font-size: 28px;
+    }
+
+    .team__content h6 {
+        font-size: 18px;
+    }
+
+    .team__content p {
+        font-size: 14px;
+    }
 }
 
 /* start footer */
