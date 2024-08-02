@@ -1,0 +1,384 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: none;
+    font-family: Quicksand, sans-serif;
+}
+
+/* start counting up */
+.midpage {
+    background: url(https://wp.w3layouts.com/diner/wp-content/themes/Diner/assets/images/banner2.jpg);
+    background-repeat: no-repeat,
+        no-repeat,
+        no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -ms-background-size: cover;
+    position: relative;
+    height: 70vh;
+    z-index: 1;
+}
+
+.midpage::before {
+    content: "";
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(16, 15, 19, 0.66);
+}
+
+.welcome-text {
+    position: relative;
+    z-index: 100;
+}
+
+.page-title.px-lg-5 {
+    color: rgb(255, 255, 255);
+    font-size: 35px;
+    font-weight: 500;
+}
+
+.mid-buttons .btn-white {
+    transition: 0.3s;
+    margin-top: 48px;
+    margin-right: 8px;
+    padding: 12px 45px;
+    font-size: 16px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    border: solid 2px rgb(49, 52, 52);
+}
+
+.mid-buttons .btn-primary {
+    transition: 0.3s;
+    background-color: rgb(255, 102, 0);
+    padding: 12px 45px;
+    margin-top: 48px;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+    border: solid 2px rgb(255, 102, 0);
+}
+
+.mid-buttons .btn-white:hover {
+    background-color: rgb(25, 26, 28);
+}
+
+.mid-buttons .btn-primary:hover {
+    background-color: rgba(255, 102, 0, 0.884);
+}
+
+.count_start {
+    background-color: rgb(25, 26, 28);
+}
+
+.counter {
+    transition: 0.3s;
+    cursor: pointer;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+    border-radius: 8px;
+}
+
+.counter {
+    background-color: rgb(25, 26, 28);
+    position: relative;
+    z-index: 10;
+    margin-top: -70px;
+}
+
+.counter span {
+    padding: 25px;
+    border-radius: 50%;
+    color: rgb(255, 255, 255);
+    font-size: 26px;
+    height: 68px;
+    width: 68px;
+    line-height: 68px;
+    background-color: rgba(255, 102, 0, 0.884);
+}
+
+.count-number {
+    margin-top: 16px;
+    font-size: 42px;
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+}
+
+.count-text {
+    font-size: 17px;
+    font-weight: 600;
+    color: rgb(114, 114, 114);
+}
+
+.counter:hover {
+    transform: translateY(-15px);
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+/* end counting up */
+/* start video */
+.video-w3 {
+    color: white;
+    text-align: center;
+    height: 110vh;
+    background-color: rgb(25, 26, 28) !important;
+}
+
+.video-item {
+    background: rgb(25, 26, 28);
+}
+
+.video-container {
+    overflow: hidden;
+    display: flex;
+    border-radius: 10px;
+    background-image: url(./img/banner3.jpg);
+    background-position: center;
+    background-size: auto;
+    height: 500px;
+    background-repeat: no-repeat;
+    position: relative;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+
+.video-container::before {
+    content: "";
+    background-color: rgba(0, 0, 0, 0.582);
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.video-container .play {
+    border: dashed rgb(255, 117, 26) 1px;
+}
+
+.play:hover {
+    border: none;
+}
+
+.video-container .play button {
+    border-radius: 50%;
+    border: none;
+}
+
+.video-container .play i {
+    animation-name: animate;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    transition: 0.25s;
+    border-radius: 50%;
+    font-size: 26px;
+    height: 80px;
+    line-height: 80px;
+    width: 80px;
+    position: relative;
+    color: rgb(255, 117, 26);
+    background: rgb(25, 26, 28);
+}
+
+.video-container .play i:hover {
+    transform: scale(1.5);
+}
+
+/* start pupup */
+#modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.801);
+    opacity: 0;
+    pointer-events: none;
+    color: white;
+}
+
+#modal-container.show {
+    opacity: 1;
+    pointer-events: all;
+}
+
+#moral {
+    width: 100%;
+    position: relative;
+    transition: all 1s ease-in-out;
+}
+
+#modal-container.show #modal {
+    animation-name: animation;
+    animation-duration: 1s;
+    animation-iteration-count: 1;
+}
+
+@keyframes animate {
+    0% {
+        box-shadow: 0 0 0 0 rgba(53, 53, 53, 0.25), 0 0 0 10px rgba(49, 49, 49, 0.25), 0 0 0 20px rgba(44, 44, 44, 0.082);
+    }
+
+    100% {
+        box-shadow: 0 0 0 10px rgba(46, 45, 45, 0.25), 0 0 0 20px rgba(80, 79, 79, 0.25), 0 0 0 40px rgba(50, 100, 245, 0);
+    }
+}
+
+@keyframes animation {
+    0% {
+        opacity: 0.5;
+        transform: scale(0.5);
+    }
+
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+#small-dialog {
+    padding: 40px 0;
+    max-width: 750px;
+    margin: 40px auto;
+    position: relative;
+}
+
+div#small-dialog iframe {
+    width: 100%;
+    height: 420px;
+    display: block;
+    border-radius: 10px;
+}
+
+.mfp-close {
+    position: absolute;
+    font-size: 28px;
+    top: 0;
+    right: 0;
+    background: none;
+    border: none;
+    color: rgb(244, 244, 244);
+}
+
+/* end video */
+
+/* start blog */
+#video {
+    background: rgb(25, 26, 28);
+}
+
+.PageBlog {
+    background: rgb(27, 31, 32);
+}
+
+.title-subhny {
+    font-family: Pacifico, cursive;
+    color: rgb(204, 82, 0);
+    font-size: 20px;
+}
+
+.title-blog {
+    font-size: 32px;
+    color: white;
+}
+
+.card {
+    background: rgb(27, 31, 32);
+}
+
+.row * {
+    border: none;
+}
+
+.row .card * {
+    text-decoration: none;
+}
+
+.card-header img {
+    width: 100%;
+    position: relative;
+    display: block;
+    margin-bottom: 25px;
+    border-radius: 6px;
+}
+
+.post-pos {
+    position: absolute;
+    bottom: 40px;
+    left: 5px;
+    transition: 0.3s;
+}
+
+.post-pos a {
+    color: rgb(204, 82, 0);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.post-pos a:hover {
+    color: #5431ac;
+}
+
+.card-body {
+    display: block;
+}
+
+.p-footer {
+    display: flex;
+}
+
+.card-body .blog-desc {
+    position: relative;
+    color: rgb(145, 138, 126);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.p-meta-info * {
+    color: rgb(145, 138, 126);
+}
+
+.read {
+    display: flex;
+    color: rgb(145, 138, 126);
+    line-height: 24px;
+    height: 24px;
+    font-weight: 700;
+    letter-spacing: break-word;
+    position: absolute;
+    right: 0;
+    bottom: 10px;
+}
+
+.url {
+    padding-left: 20px;
+}
+
+.read {
+    transition: 0.3s;
+}
+
+.read * {
+    margin-left: 20px;
+}
+
+.p-meta-info img {
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.read:hover {
+    color: rgb(204, 82, 0);
+}
+
+/* end blog */
