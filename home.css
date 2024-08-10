@@ -13,7 +13,154 @@
     margin-left: auto;
 }
 
+body {
+    background-color: white;
+    color: black;
+}
+
+/* Dark mode */
+body.dark-mode {
+    background-color: #1e1e1e;
+    color: white;
+}
+
+body.dark-mode .PageBlog {
+    background-color: #1e1e1e;
+}
+
+body.dark-mode .title-subhny {
+    color: #ff6600;
+}
+
+body.dark-mode .title-blog {
+    color: white;
+}
+
+body.dark-mode .card {
+    background: #2e2e2e;
+    border: 1px solid #444;
+}
+
+body.dark-mode .card-header img {
+    border-radius: 6px;
+}
+
+body.dark-mode .post-pos a {
+    color: #ff6600;
+}
+
+body.dark-mode .post-pos a:hover {
+    color: #d1c0ff;
+}
+
+body.dark-mode .card-body .blog-desc {
+    color: white;
+}
+
+body.dark-mode .p-meta-info a {
+    color: white;
+}
+
+body.dark-mode .read {
+    color: white;
+}
+
+body.dark-mode .read:hover {
+    color: #d1c0ff;
+}
+
+/* Dark mode categories */
+body.dark-mode .categories {
+    background: #1e1e1e;
+    padding: 40px;
+    margin-top: 40px;
+}
+
+body.dark-mode .categories__header h4 {
+    color: #ff6600;
+}
+
+body.dark-mode .categories__header h2 {
+    color: white;
+}
+
+body.dark-mode .categories .card-body {
+    color: white;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0.53) 69%, rgba(0, 0, 0, 0.76) 100%);
+}
+
+body.dark-mode .categories .card-body h5 {
+    color: #fff;
+}
+
+body.dark-mode .categories .card-body p {
+    color: #fcb900;
+}
+
+body.dark-mode .categories .card-img-top {
+    transition: 0.5s;
+    border-radius: 14px;
+}
+
+body.dark-mode .categories .card::before {
+    background-color: rgba(0, 0, 0, 0.3); /* Adjusted for dark mode */
+}
+
+body.dark-mode .categories .card:hover::before {
+    background-color: rgba(0, 0, 0, 0.4); /* Darker hover effect */
+}
+
+/* Dark mode toggle switch button */
+body.dark-mode #switchButton i.far.fa-moon {
+    display: none;
+}
+
+body.dark-mode #switchButton i.far.fa-sun {
+    display: inline;
+}
+
+#switchButton i.far.fa-sun {
+    display: none;
+}
+
+#switchButton i.far.fa-moon {
+    display: inline;
+}
+
+/* Dark mode feature */
+body.dark-mode .feature {
+    background: #1e1e1e;
+}
+
+body.dark-mode .feature .card {
+    background: #2e2e2e;
+    border: 1px solid #444;
+}
+
+body.dark-mode .feature .card-body i {
+    background: rgba(130, 115, 252, 0.1);
+    color: #ff6600;
+}
+
+body.dark-mode .feature .card-body i:hover {
+    background: #ff6600;
+    color: #fff;
+}
+
+body.dark-mode .feature .card-body p {
+    color: #e0e0e0; 
+}
+
+body.dark-mode .feature .card-title p {
+    color: #e0e0e0; /
+}
+
+body.dark-mode .feature .card-title-infor {
+    color: #e0e0e0; 
+}
+
 /* start header */
+
 header {
     position: absolute;
     z-index: 3;
@@ -443,9 +590,9 @@ header .collapse i{
 /* start categories */
 
 .categories {
+    background: #f1f1f1;
     padding: 40px;
     margin-top: 40px;
-    background: #f1f1f1;
 }
 
 .categories__header {
@@ -801,7 +948,7 @@ header .collapse i{
     color: white;
     text-align: center;
     height: 110vh;
-    background-color: #fff!important;
+    
 }
 
 .video-item {
@@ -953,6 +1100,7 @@ div#small-dialog iframe {
 .PageBlog {
     background: #f1f1f1;
 }
+
 
 .title-subhny {
     font-family: Pacifico, cursive;
