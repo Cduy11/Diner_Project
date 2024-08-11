@@ -692,19 +692,30 @@ header .collapse i{
     padding: 40px;
     margin-top: 40px;
 }
+
+.feature .row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px; /* Tạo khoảng cách giữa các card */
+    margin-right: 0;
+    margin-left: 0;
+}
+
+.feature .col-lg-4, 
+.feature .col-md-6, 
+.feature .col-sm-12 {
+    flex-basis: calc(33.333% - 20px); /* Chiều rộng của mỗi card, trừ đi khoảng cách */
+    box-sizing: border-box;
+}
+
 .feature .card {
     padding: 10px 20px;
     box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
     border-radius: 14px;
     border: 1px solid rgb(243, 243, 243);
-    margin-bottom: 20px;
+    margin: 0; /* Đặt margin về 0 để không ảnh hưởng đến khoảng cách */
     background: #fff;
-    
-}
-
-.feature .row {
-    margin-right: -35px;
-    margin-left: -15px;
 }
 
 .feature .col-12 {
@@ -745,6 +756,23 @@ header .collapse i{
     line-height: 32px;
     font-weight: 400;
 }
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+    .feature .col-lg-4, 
+    .feature .col-md-6 {
+        flex-basis: calc(50% - 20px); /* Hai card trên một hàng */
+    }
+}
+
+@media (max-width: 768px) {
+    .feature .col-lg-4, 
+    .feature .col-md-6, 
+    .feature .col-sm-12 {
+        flex-basis: calc(100% - 20px); /* Một card trên một hàng */
+    }
+}
+
 
 
 /* end feature */
